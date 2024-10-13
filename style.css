@@ -16,6 +16,11 @@
     --banner-text-color: white;
 }
 
+::selection {
+    background-color: var(--main-link-hover-color);
+    color: white;
+}
+
 * {
     margin: 0;
     padding: 0;
