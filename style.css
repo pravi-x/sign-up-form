@@ -3,6 +3,9 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+
+    border: 1px solid yellow !important;
+
 }
 
 :root{
@@ -37,10 +40,19 @@
 
 
 .left-side {
-    
+    display: flex;
+    align-items: stretch;
+    flex-direction: row;
 
 }
 
 .right-side {
+    display: flex;
+    align-items: stretch;
+    flex-direction: column;
 
+}
+
+.main-content {
+    display: flex;
 }
