@@ -1,72 +1,78 @@
-@font-face{
-    font-family: Norse Bold;
+@font-face {
+    font-family: 'Norse Bold';
     src: url(fonts/Norse-Bold.otf);
 }
 
-/* Reset CSS */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-
-    /* border: 1px solid yellow !important; */
-
-}
-
-:root{
-    /* Colors */
+:root {
     --main-bg-color: #f4f4f4;
     --main-text-color: #333;
-    --main-link-color:#0056b3 ;
+    --main-link-color: #0056b3;
     --main-link-hover-color: #797b0686;
     --main-border-color: #8bbdbe;
     --main-border-radius: 5px;
     --main-box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     --main-transition: 0.3s;
-    --banner-bg-color:red;
+    --banner-bg-color: rgba(0, 0, 0, 0.8);
     --banner-text-color: white;
 }
-/* Body */
-.header, .footer  {
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 16px;
+    line-height: 1.5;
+    color: var(--main-text-color);
+    background-color: var(--main-bg-color);
+}
+
+.header, .footer {
     background: var(--banner-bg-color);
     color: var(--banner-text-color);
     border-bottom: 1px solid var(--main-border-color);
     padding: 10px 0;
     font-style: italic;
     text-align: center;
-    background: rgba(0, 0, 0, 0.8);
+}
+
+.header{
+    position: fixed;
+    top: 0;
+    width: 100%;
 }
 
 .footer {
+    position: static;
     bottom: 0;
     width: 100%;
-    font-size: 12px;
+    font-size: 0.75rem;
 }
-
 
 .main-container {
     display: flex;
     height: 100vh;
 }
 
-.left{
+.left {
     min-width: 30%;
     background: url(images/basket_and_sea.jpg) no-repeat center center/cover;
 }
+
 .left #team-name {
     text-align: center;
-    font-family: Norse Bold;
-    font-size: 70px;
-
+    font-family: 'Norse Bold', sans-serif;
+    font-size: 4.375rem;
     color: var(--banner-text-color);
-    justify-content: center;
     background-color: rgba(0, 0, 0, 0.5);
     padding: 18px;
     margin-top: 28%;
 }
 
 .right {
-    background-color: #8bbdbe30;
+    background-color: rgba(139, 189, 190, 0.188);
     display: flex;
     flex-direction: column;
     font-size: 1.5rem;
@@ -74,7 +80,6 @@
     font-weight: 500;
     padding: 20px;
     margin: auto;
-
 }
 
 .intro-text {
@@ -84,19 +89,15 @@
     margin-top: 20px;
 }
 
-/* Existing styles remain unchanged */
-
-/* Form Container Styles */
 .form-container {
-    background-color: #ffffff;
+    background-color: #fff;
     padding: 30px;
     border-radius: 8px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    max-width: 800px; /* Increased to accommodate inline layout */
+    max-width: 800px;
     margin: 0 auto;
 }
 
-/* Fieldset Styles */
 fieldset {
     border: none;
     margin-bottom: 20px;
@@ -114,13 +115,11 @@ legend {
     width: 100%;
 }
 
-/* Label and Input Container */
 .input-group {
     flex: 1;
-    min-width: 200px; /* Ensures inputs don't get too narrow */
+    min-width: 200px;
 }
 
-/* Label Styles */
 label {
     display: block;
     margin-bottom: 5px;
@@ -128,7 +127,6 @@ label {
     font-size: 0.9em;
 }
 
-/* Input Styles */
 input[type="text"],
 input[type="email"],
 input[type="password"] {
@@ -148,7 +146,6 @@ input[type="password"]:focus {
     outline: none;
 }
 
-/* Submit Button Styles */
 input[type="submit"] {
     width: 100%;
     padding: 12px;
@@ -166,7 +163,6 @@ input[type="submit"]:hover {
     background-color: var(--main-link-hover-color);
 }
 
-/* Sign-in Link Styles */
 .sign-in-container {
     text-align: center;
     margin-top: 20px;
