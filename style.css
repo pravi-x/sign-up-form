@@ -56,7 +56,7 @@
 .left #team-name {
     text-align: center;
     font-family: Norse Bold;
-    font-size: 2em;
+    font-size: 70px;
 
     color: var(--banner-text-color);
     justify-content: center;
