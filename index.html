@@ -12,49 +12,57 @@
     </div>
 
     <div class="main-container">
-        <div class="left-side">
-            <div class="team-name">
-                <h1>NAYAGOI</h1>
-            </div>
-
-            <!-- <img src="images/basket_and_sea.jpg" alt="backgound" id="backgound"> -->
+        <div class="main left">
+            <div id="team-name">NAYAGOI B.C.</div>
         </div>
 
-        <div class="right-side">
+        <div class="main right">
             <div class="intro-text">
-                Do you want to learn the news of our team and become a member? Sign up now!
+                <p>Do you want to learn the news of our team and become a member? </p> 
+                <p>Sign up <em>now</em> to get started.</p> 
             </div>
-
 
             <div class="form-container">
                 <form action="#">
                     <fieldset>
                         <legend>Personal Information</legend>
-                        <label for="firstname">FirstName</label>
-                        <input type="text" name="firstname" id="firstname">
-                        <label for="lastname">Last Name</label>
-                        <input type="text" name="lastname" id="lastname">
+                        <div class="input-group">
+                            <label for="firstname">First Name</label>
+                            <input type="text" name="firstname" id="firstname">
+                        </div>
+                        <div class="input-group">
+                            <label for="lastname">Last Name</label>
+                            <input type="text" name="lastname" id="lastname">
+                        </div>
                     </fieldset>
                     <fieldset>
                         <legend>Contact Information</legend>
-                        <label for="email">Email</label>
-                        <input type="mail" name="email" id="email">
-                        <label for="phone">Phone Number</label>
-                        <input type="text" name="phone" id="phone">
+                        <div class="input-group">
+                            <label for="email">Email</label>
+                            <input type="email" name="email" id="email">
+                        </div>
+                        <div class="input-group">
+                            <label for="phone">Phone Number</label>
+                            <input type="text" name="phone" id="phone">
+                        </div>
                     </fieldset>
                     <fieldset>
                         <legend>Security</legend>
-                        <label for="password">Password</label>
-                        <input type="text" name="password" id="password">
-                        <label for="confirm">Confirm Password</label>
-                        <input type="text" name="confirm" id="confirm">
+                        <div class="input-group">
+                            <label for="password">Password</label>
+                            <input type="password" name="password" id="password">
+                        </div>
+                        <div class="input-group">
+                            <label for="confirm">Confirm Password</label>
+                            <input type="password" name="confirm" id="confirm">
+                        </div>
                     </fieldset>
-                        <input type="submit" value="Submit">
+                    <input type="submit" value="Submit">
                 </form>
             </div>
 
             <div class="sign-in-container">
-                <p>Already a member? <a href="#">Sign in</a></p>
+                <div>Already a member? <a href="#">Sign in</a></div>
             </div>
         </div>
     </div>

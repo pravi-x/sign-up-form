@@ -1,10 +1,15 @@
+@font-face{
+    font-family: Norse Bold;
+    src: url(fonts/Norse-Bold.otf);
+}
+
 /* Reset CSS */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 
-    border: 1px solid yellow !important;
+    /* border: 1px solid yellow !important; */
 
 }
 
@@ -12,9 +17,9 @@
     /* Colors */
     --main-bg-color: #f4f4f4;
     --main-text-color: #333;
-    --main-link-color: #007bff;
-    --main-link-hover-color: #0056b3;
-    --main-border-color: #ccc;
+    --main-link-color:#0056b3 ;
+    --main-link-hover-color: #797b0686;
+    --main-border-color: #8bbdbe;
     --main-border-radius: 5px;
     --main-box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     --main-transition: 0.3s;
@@ -29,30 +34,151 @@
     padding: 10px 0;
     font-style: italic;
     text-align: center;
+    background: rgba(0, 0, 0, 0.8);
 }
 
 .footer {
-    position: fixed;
     bottom: 0;
+    width: 100%;
+    font-size: 12px;
+}
+
+
+.main-container {
+    display: flex;
+    height: 100vh;
+}
+
+.left{
+    min-width: 30%;
+    background: url(images/basket_and_sea.jpg) no-repeat center center/cover;
+}
+.left #team-name {
+    text-align: center;
+    font-family: Norse Bold;
+    font-size: 2em;
+
+    color: var(--banner-text-color);
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 18px;
+    margin-top: 28%;
+}
+
+.right {
+    background-color: #8bbdbe30;
+    display: flex;
+    flex-direction: column;
+    font-size: 1.5rem;
+    gap: 36px;
+    font-weight: 500;
+    padding: 20px;
+    margin: auto;
+
+}
+
+.intro-text {
+    text-align: center;
+    font-size: 1.5em;
+    font-weight: 500;
+    margin-top: 20px;
+}
+
+/* Existing styles remain unchanged */
+
+/* Form Container Styles */
+.form-container {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    max-width: 800px; /* Increased to accommodate inline layout */
+    margin: 0 auto;
+}
+
+/* Fieldset Styles */
+fieldset {
+    border: none;
+    margin-bottom: 20px;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+legend {
+    font-size: 1.2em;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #333;
     width: 100%;
 }
 
-
-
-.left-side {
-    display: flex;
-    align-items: stretch;
-    flex-direction: row;
-
+/* Label and Input Container */
+.input-group {
+    flex: 1;
+    min-width: 200px; /* Ensures inputs don't get too narrow */
 }
 
-.right-side {
-    display: flex;
-    align-items: stretch;
-    flex-direction: column;
-
+/* Label Styles */
+label {
+    display: block;
+    margin-bottom: 5px;
+    color: #555;
+    font-size: 0.9em;
 }
 
-.main-content {
-    display: flex;
+/* Input Styles */
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 1em;
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus {
+    border-color: #4a90e2;
+    box-shadow: 0 0 5px rgba(74, 144, 226, 0.5);
+    outline: none;
+}
+
+/* Submit Button Styles */
+input[type="submit"] {
+    width: 100%;
+    padding: 12px;
+    background-color: #4a90e2;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-top: 20px;
+}
+
+input[type="submit"]:hover {
+    background-color: var(--main-link-hover-color);
+}
+
+/* Sign-in Link Styles */
+.sign-in-container {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.sign-in-container a {
+    color: #4a90e2;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.sign-in-container a:hover {
+    color: var(--main-link-hover-color);
+    text-decoration: underline;
 }
